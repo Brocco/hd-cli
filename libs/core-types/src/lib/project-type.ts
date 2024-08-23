@@ -1,1 +1,1 @@
-export type ProjectType = 'npm' | 'not configured';
+export type ProjectType = 'java' | 'npm' | 'not configured';

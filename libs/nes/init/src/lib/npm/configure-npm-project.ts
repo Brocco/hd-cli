@@ -2,7 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { Entry } from '../models';
 import path = require('path');
 
-export function configureNpmProject(accessToken: string, packages: Entry[]) {
+export function configureNpmProject(accessToken: string, packages: Entry[]): void {
   updatePackageJson(packages);
   updateNpmrc(accessToken);
 }
